@@ -1,4 +1,4 @@
-ts	1352283901000
+ts	1352314857000
 Default-Landscape.jpg	36232
 Default-Portrait.jpg	28479
 Default.jpg	17184
@@ -11,6 +11,8 @@ apple-touch-icon-57x57-precomposed.png	6790
 apple-touch-icon-72x72-precomposed.png	8844
 apple-touch-icon-precomposed.png	6790
 favicon.ico	1068
+images
+	peter.jpg	14156
 mobileweb
 	appicon.png	19109
 	apple_startup_images
@@ -352,10 +354,12 @@ titanium.css	39528
 titanium.js	517085
 ui
 	common
-		FirstView.js	584
+		RegMat.js	680
+		RegMatView.js	1066
+		WelcomeView.js	1217
 	handheld
 		ApplicationWindow.js	460
 		android
 			ApplicationWindow.js	503
 	tablet
-		ApplicationWindow.js	460
+		ApplicationWindow.js	742

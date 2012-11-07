@@ -3,17 +3,35 @@ function ApplicationWindow() {
 	//load component dependencies
 	var FirstView = require('ui/common/FirstView');
 	var SearchView = require('ui/common/ElementSearchView');
-		
-	//create component instance
+	var WelcomeView = require('ui/common/WelcomeView');
+	var FirstView = require('ui/common/WelcomeView.js');
+	var RegMat = require('ui/common/RegMat.js');	
+
+//create component instance
 	var self = Ti.UI.createWindow({
 		backgroundColor:'#ffffff'
 	});
+	
+	var petersView = Ti.UI.createImageView({
+		image: "/images/peter.jpg"
+	});
+	self.add(petersView);
+	
+
+	
 		
 	//construct UI
 	var firstView = new FirstView();
 	self.add(firstView);
 	var searchView = new SearchView();
 	self.add(searchView);
+
+	var regMat = new RegMat();
+	self.add(regMat);
+
+	var welcomeView = new WelcomeView();
+	self.add(welcomeView);
+
 	
 	return self;
 }
