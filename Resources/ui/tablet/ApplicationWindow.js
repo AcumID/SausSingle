@@ -3,8 +3,6 @@ function ApplicationWindow() {
 	//load component dependencies
 
 	var WelcomeView = require('ui/common/WelcomeView');
-		
-
 	var FirstView = require('ui/common/WelcomeView.js');
 	var RegMat = require('ui/common/RegMat.js');	
 
@@ -22,11 +20,13 @@ function ApplicationWindow() {
 	
 		
 	//construct UI
-	var welcomeView = new WelcomeView();
-	self.add(welcomeView);
-	
+
 	var regMat = new RegMat();
 	self.add(regMat);
+
+	var welcomeView = new WelcomeView();
+	self.add(welcomeView);
+
 	
 	return self;
 }

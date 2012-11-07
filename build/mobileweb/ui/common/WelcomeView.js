@@ -2,19 +2,28 @@
 function WelcomeView() {
 	//create object instance, a parasitic subclass of Observable
 	var self = Ti.UI.createView({
-		backgroundColor:"gray",
+		backgroundColor:"white",
 		opacity:0.9,
 		height: "90%",
-		width: "90%"
+		width: "90%",
+		borderWidth:2,
+		borderColor:"Black"
 	});
-	self.set
+	
 
 	var welcomeLabel = Ti.UI.createLabel({
-		text: "Hej Pedersen og Findus, idag arbejder I på renovering af vinduer på Birkevej 12.",
+		text: "Hej Pedersen og Findus..",
 		top:"10%",
+		font: {fontFamily:"Segoe UI", fontSize:35 },
 	});
 	self.add(welcomeLabel);
 	
+		var welcomeJobLabel = Ti.UI.createLabel({
+		text: "Idag arbejder I på renovering af vinduer på Birkevej 12.",
+		top:"30%",
+		font: {fontFamily:"Segoe UI Light", fontSize:35 },
+	});
+	self.add(welcomeJobLabel);
 	
 	var confirmButton = Ti.UI.createButton({
 		color:'green',
