@@ -13,6 +13,7 @@ function ApplicationWindow() {
 	});
 	self.add(petersView);
 	
+
 	
 		
 	//construct UI

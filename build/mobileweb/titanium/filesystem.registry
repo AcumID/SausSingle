@@ -1,4 +1,4 @@
-ts	1352287935000
+ts	1352313144000
 Default-Landscape.jpg	36232
 Default-Portrait.jpg	28479
 Default.jpg	17184
@@ -360,4 +360,4 @@ ui
 		android
 			ApplicationWindow.js	503
 	tablet
-		ApplicationWindow.js	582
+		ApplicationWindow.js	584
