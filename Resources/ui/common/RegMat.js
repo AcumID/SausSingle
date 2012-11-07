@@ -1,4 +1,5 @@
-function ReggedMaterials(title){
+function RegMat(title){
+
 	var self = Ti.UI.createView({
 		backgroundColor:'orange',
 		width:"10%",
@@ -7,25 +8,24 @@ function ReggedMaterials(title){
 		opacity: 0.75
 	});
 	
+	var label = Ti.UI.createLabel({
+		color:'#000000',
+		text:"Registrerede Materialer",
+		width:"auto",
+		height:"5%",
+		left: "10%",
+		top:"0"
+	});
+	self.add(label);
 	
 	
-	var skruer = createMaterial("skruer", 300);
+	var RegMatView = require('ui/common/RegMatView.js');
 
-
+	var matView = new RegMatView("Skruer", 1);
+	self.add(matView);
 	
-	
-	function createMaterialView(name, amount){
-		var MaterialView = Titanium.UI.createView({
-			backgroundColor:'white',
-		});
-		createMinusButton();
-		createMatLabel(name, amount);
-		
-	}
-	
-	function createMatLabel(name, amount){
-		var label = Ti.UI.createLabel({})
-	}
+	var matView2 = new RegMatView("Lægter", 2);
+	self.add(matView2);
 	
 	
 	
@@ -34,35 +34,6 @@ function ReggedMaterials(title){
 	
 	
 	
-	
-	
-	function createMinusButton(){
-		var minusButton = Titanium.UI.createButton({
-   		title: '-',
-   		top: 10,
-   		left: "1%",
-   		width: 20,
-   		height: 20
-		});
-		
-		minusButton.addEventListener('click',function(e)
-		{
-   			self.remove(minusButton);
-   			
-		});
-	
-		self.add(minusButton);
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	return self
+	return self;
 };
-module.exports = ReggedMaterials;
+module.exports = RegMat;
