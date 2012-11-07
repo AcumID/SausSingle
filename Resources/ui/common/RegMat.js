@@ -27,7 +27,8 @@ function RegMat(title){
 	var matView2 = new RegMatView("Lægter", 2);
 	self.add(matView2);
 	
-	
+	var matView3 = new RegMatView("Almuegerigter", 3);
+	self.add(matView3);
 	
 	
 	

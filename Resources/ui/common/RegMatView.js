@@ -29,10 +29,24 @@ function RegMatView(title, pos){
 	});
 	self.add(nameLabel);
 	
-	
-	
+	var amountLabel = Ti.UI.createLabel({
+  		text: 0,
+  		width: "auto", 
+  		height: 'auto',
+  		right: "5%"
+	});
+	self.add(amountLabel);
+		
 	return self
+	
+	//Set function to change the amount of a material type
+	function setAmount(newAmount){
+		amountLabel.text = newAmount;
+	}
+	
 };
+
+
 
 
 module.exports = RegMatView;
