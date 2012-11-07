@@ -1,5 +1,5 @@
 //FirstView Component Constructor
-function FirstView() {
+function WelcomeView() {
 	//create object instance, a parasitic subclass of Observable
 	var self = Ti.UI.createView();
 	
@@ -22,4 +22,4 @@ function FirstView() {
 	return self;
 }
 
-module.exports = FirstView;
+module.exports = WelcomeView;
