@@ -1,10 +1,9 @@
 //Application Window Component Constructor
 function ApplicationWindow() {
 	//load component dependencies
-	
+
 	var SearchView = require('ui/common/ElementSearchView');
 	var WelcomeView = require('ui/common/WelcomeView');
-	var FirstView = require('ui/common/WelcomeView.js');
 	var RegMat = require('ui/common/RegMat.js');	
 
 //create component instance
