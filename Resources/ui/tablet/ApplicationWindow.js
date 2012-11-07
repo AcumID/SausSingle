@@ -2,6 +2,7 @@
 function ApplicationWindow() {
 	//load component dependencies
 	var FirstView = require('ui/common/FirstView');
+	var SearchView = require('ui/common/ElementSearchView');
 		
 	//create component instance
 	var self = Ti.UI.createWindow({
@@ -11,6 +12,8 @@ function ApplicationWindow() {
 	//construct UI
 	var firstView = new FirstView();
 	self.add(firstView);
+	var searchView = new SearchView();
+	self.add(searchView);
 	
 	return self;
 }
