@@ -19,7 +19,7 @@ function RegMat(title){
 	self.add(label);
 	
 	
-	var RegMatView = require('ui/common/RegMatView.js');
+	var RegMatView = require('ui/common/RegMatView');
 
 	var matView = new RegMatView("Skruer", 1);
 	self.add(matView);

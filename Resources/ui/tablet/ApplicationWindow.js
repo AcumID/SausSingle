@@ -4,7 +4,7 @@ function ApplicationWindow() {
 
 	var SearchView = require('ui/common/ElementSearchView');
 	var WelcomeView = require('ui/common/WelcomeView');
-	var RegMat = require('ui/common/RegMat.js');	
+	var RegMat = require('ui/common/RegMat');	
 
 //create component instance
 	var self = Ti.UI.createWindow({
