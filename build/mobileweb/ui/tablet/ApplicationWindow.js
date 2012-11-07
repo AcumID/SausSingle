@@ -7,6 +7,13 @@ function ApplicationWindow() {
 	var self = Ti.UI.createWindow({
 		backgroundColor:'#ffffff'
 	});
+	
+	var petersView = Ti.UI.createImageView({
+		image: "/images/peter.jpg"
+	});
+	self.add(petersView);
+	
+	
 		
 	//construct UI
 	var welcomeView = new WelcomeView();
