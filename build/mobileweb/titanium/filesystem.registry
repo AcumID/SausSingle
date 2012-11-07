@@ -1,4 +1,4 @@
-ts	1352313144000
+ts	1352313751000
 Default-Landscape.jpg	36232
 Default-Portrait.jpg	28479
 Default.jpg	17184
@@ -354,10 +354,12 @@ titanium.css	39528
 titanium.js	517085
 ui
 	common
+		RegMat.js	680
+		RegMatView.js	1066
 		WelcomeView.js	973
 	handheld
 		ApplicationWindow.js	460
 		android
 			ApplicationWindow.js	503
 	tablet
-		ApplicationWindow.js	584
+		ApplicationWindow.js	745
